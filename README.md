@@ -19,6 +19,8 @@
 
 这里记录并分享一下我的思路和实现，也希望能和大家一起讨论更好的实现方案。
 
+![动态加载滚轮](https://github.com/skymxc/Android-PickerView/blob/master/preview/dynamic.gif)
+
 起初，只是想根据获取到的数据动态的生成滚轮，有多少级就生成多少个，自动排列出来就好。
 
 在看了源码后发现原来的 OptionsPickerView 里写死了三个 WheelView ，所以最多只能是三个。
@@ -454,8 +456,9 @@ public interface DynamicWheelSelectListener<T extends IDynamicWheelItem>extends 
 ----
 
 其他想法：
-1.目前使用 LinearLayout 装载的，是否可以换成 RecyclerView 呢，可以更好的控制在一行超出多少个后换行，避免拥挤。
-2.目前在动态追加滚轮时是很生硬的追加上去的，可以优化为使用动画平滑的过渡可能体验更好些。
+
+- 目前使用 LinearLayout 包裹的，是否可以换成 RecyclerView 呢，是否能更好的控制在一行超出多少个后换行，避免拥挤。
+- 目前在动态追加滚轮时是很生硬的追加上去的，可以优化为使用动画平滑的过渡可能体验更好些。
 
 目前把代码放在了这里 [Android-PickerView](https://github.com/skymxc/Android-PickerView)
 
