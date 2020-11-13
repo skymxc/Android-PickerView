@@ -27,7 +27,10 @@
 在使用时，根据自身情况让你的 JavaBean 实现 IWheelItem 或者 IDynamicWheelItem 就好。
 
 
-具体用法可以看代码，在这里
+具体用法可以看代码，在这里 [TestMultiWheelActivity](https://github.com/skymxc/Android-PickerView/blob/master/app/src/main/java/com/bigkoo/pickerviewdemo/TestMultiWheelActivity.java)
+
+![DynamicWheelPickerView](https://github.com/skymxc/Android-PickerView/blob/master/preview/dynamic.gif)
+![MultiWheelPickerView](https://github.com/skymxc/Android-PickerView/blob/master/preview/multiwheel.gif)
 
 以下是原介绍
 
