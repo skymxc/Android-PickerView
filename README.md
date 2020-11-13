@@ -20,6 +20,21 @@
 
 ## 介绍
 
+我在原有的基础上做了一些扩展，主要是添加了两个 picker
+- MultiWheelPickerView 可以根据数据动态生成多个滚轮，不再局限于两个三个选项
+- DynamicWheelPickerView 也是动态生成，但可以一级一级的加载数据并追加滚轮。
+
+在使用时，根据自身情况让你的 JavaBean 实现 IWheelItem 或者 IDynamicWheelItem 就好。
+
+
+具体用法可以看代码，在这里
+
+以下是原介绍
+
+------
+
+
+
 这是一款仿iOS的PickerView控件，有时间选择器和选项选择器，新版本的详细特性如下：
  
 ——TimePickerView  时间选择器，支持年月日时分，年月日，年月，时分等格式。   

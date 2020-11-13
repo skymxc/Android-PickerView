@@ -83,6 +83,15 @@
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
                 android:text="@string/picker_use_circle_divider" />
+
+        <Button
+                android:id="@+id/btn_multi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:text="@string/picker_multi" />
+
+
         </LinearLayout>
 
     </ScrollView>

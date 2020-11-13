@@ -18,6 +18,7 @@ import android.view.View;
 
 import com.contrarywind.adapter.WheelAdapter;
 import com.contrarywind.interfaces.IPickerViewData;
+import com.contrarywind.interfaces.IWheelItem;
 import com.contrarywind.listener.LoopViewGestureListener;
 import com.contrarywind.listener.OnItemSelectedListener;
 import com.contrarywind.timer.InertiaTimerTask;
@@ -612,6 +613,8 @@ public class WheelView extends View {
         } else if (item instanceof Integer) {
             //如果为整形则最少保留两位数.
             return getFixNum((int) item);
+        }else if (item instanceof IWheelItem){
+            return ((IWheelItem)item).getShowText();
         }
         return item.toString();
     }

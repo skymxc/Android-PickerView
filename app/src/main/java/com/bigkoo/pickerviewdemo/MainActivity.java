@@ -88,6 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_GotoJsonData).setOnClickListener(this);
         findViewById(R.id.btn_lunar).setOnClickListener(this);
+        findViewById(R.id.btn_multi).setOnClickListener(this);
     }
 
 
@@ -113,6 +114,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             pvCustomLunar.show();
         } else if (v.getId() == R.id.btn_circle) {
             startActivity(new Intent(MainActivity.this, TestCircleWheelViewActivity.class));
+        }else if (v.getId()==R.id.btn_multi){
+            startActivity(new Intent(MainActivity.this,TestMultiWheelActivity.class));
         }
     }
 

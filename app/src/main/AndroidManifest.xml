@@ -22,6 +22,7 @@
 
         </activity>
         <activity android:name=".TestCircleWheelViewActivity" />
+        <activity android:name=".TestMultiWheelActivity" />
     </application>
 
 </manifest>

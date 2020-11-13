@@ -31,7 +31,7 @@ public class PickerOptions {
 
     public static final int TYPE_PICKER_OPTIONS = 1;
     public static final int TYPE_PICKER_TIME = 2;
-
+    public static final int TYPE_PICKER_MULTI = 3;
     public OnOptionsSelectListener optionsSelectListener;
     public OnTimeSelectListener timeSelectListener;
     public View.OnClickListener cancelListener;
@@ -71,7 +71,9 @@ public class PickerOptions {
     public PickerOptions(int buildType) {
         if (buildType == TYPE_PICKER_OPTIONS) {
             layoutRes = R.layout.pickerview_options;
-        } else {
+        } else if (buildType==TYPE_PICKER_MULTI){
+            layoutRes = R.layout.pickervew_multi;
+        }else {
             layoutRes = R.layout.pickerview_time;
         }
     }
